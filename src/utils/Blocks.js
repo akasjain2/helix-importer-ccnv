@@ -126,7 +126,6 @@ export default class Blocks {
 
   static computeBlockName(str) {
     return str
-      .replace(/-/g, ' ')
       .replace(/\s(.)/g, (s) => s.toUpperCase())
       .replace(/^(.)/g, (s) => s.toUpperCase());
   }
